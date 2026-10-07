@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hochzeit von Swantje und Sören am 24. Juli 2027">
+  <meta name="theme-color" content="#59664a">
+  <title>Swantje & Sören | 24.07.2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,600&family=Inter:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="leaf leaf-a" aria-hidden="true"></div><div class="leaf leaf-b" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#start">S <i>&</i> S</a>
+    <button class="menu-button" aria-expanded="false" aria-controls="nav">Menü</button>
+    <nav id="nav" aria-label="Hauptnavigation">
+      <a href="#willkommen">Willkommen</a><a href="#ablauf">Ablauf</a><a href="#orte">Orte</a>
+      <a class="evening-only" href="#uebernachtung">Übernachtung</a><a href="#trauzeugen">Trauzeugen</a>
+      <a href="#geschenke">Geschenke</a><a class="nav-rsvp" href="#rsvp">Zu- oder absagen</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="start" class="hero">
+      <img src="assets/hero-berge.jpg" alt="Swantje und Sören in einer Berglandschaft">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="kicker">Wir sagen Ja</p>
+        <h1>Swantje <span>&</span> Sören</h1>
+        <p class="hero-date">24. Juli 2027</p>
+        <p class="hero-copy">Wir heiraten und möchten diesen besonderen Tag mit euch feiern.</p>
+        <a href="#willkommen" class="outline-button">Unsere Einladung entdecken</a>
+      </div>
+    </section>
+
+    <section id="willkommen" class="section intro-section botanical">
+      <div class="narrow center">
+        <p class="kicker">Von Herzen willkommen</p>
+        <h2>Schön, dass ihr dabei seid</h2>
+        <p class="lead">Gemeinsam mit euch möchten wir lachen, genießen und Erinnerungen schaffen, die bleiben.</p>
+        <div class="countdown" aria-label="Countdown bis zur Hochzeit">
+          <div><strong id="days">–</strong><span>Tage</span></div><div><strong id="hours">–</strong><span>Stunden</span></div><div><strong id="minutes">–</strong><span>Minuten</span></div>
+        </div>
+        <p class="guest-badge" id="guestBadge"></p>
+      </div>
+    </section>
+
+    <section id="ablauf" class="section sage">
+      <div class="section-head"><p class="kicker">Unser Tag</p><h2>Ablauf</h2></div>
+      <div class="timeline">
+        <article><time>13:30</time><div class="marker"></div><div><h3>Ankommen</h3><p>Willkommen auf dem Hof in Sievershausen.</p></div></article>
+        <article><time>14:00–15:00</time><div class="marker"></div><div><h3>Freie Trauung</h3><p>Wir geben uns das Ja-Wort.</p></div></article>
+        <article><time>15:00–17:00</time><div class="marker"></div><div><h3>Kaffee & Kuchen</h3><p>Zeit zum Anstoßen, Genießen und Zusammensein.</p></div></article>
+        <article class="day-only"><time>ab 17:00</time><div class="marker"></div><div><h3>Ausklang</h3><p>Wir verabschieden uns von unseren Nachmittagsgästen und sagen Danke für die gemeinsame Zeit.</p></div></article>
+        <article class="evening-only"><time>ab 18:30</time><div class="marker marker-gold"></div><div><h3>Empfang im Hotel</h3><p>Ankommen im Hotel Schönau, anschließend Abendessen, Feier und Tanz.</p></div></article>
+      </div>
+    </section>
+
+    <section id="orte" class="section">
+      <div class="section-head"><p class="kicker">Hier feiern wir</p><h2>Orte & Anreise</h2></div>
+      <div class="cards">
+        <article class="card"><span class="card-number">01</span><h3>Freie Trauung & Nachmittag</h3><p><strong>Katt’sche Str. 8</strong><br>31275 Lehrte-Sievershausen</p><a class="text-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Katt%27sche+Str.+8%2C+31275+Lehrte-Sievershausen">Route öffnen</a></article>
+        <article class="card evening-only"><span class="card-number">02</span><h3>Abendveranstaltung</h3><p><strong>Hotel Schönau</strong><br>Peiner Straße 17<br>31228 Peine</p><a class="text-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hotel+Sch%C3%B6nau%2C+Peiner+Stra%C3%9Fe+17%2C+31228+Peine">Route öffnen</a></article>
+      </div>
+      <aside class="notice"><strong>Wichtiger Hinweis zur Anreise:</strong> Die Feierlichkeiten finden auf dem Hof an der Katt’schen Str. 8 statt. Bitte nutzt nach Möglichkeit die Parkmöglichkeiten entlang der Katt’schen Str. 8 vor dem Hof.</aside>
+      <div class="dresscode"><p class="kicker">Dresscode</p><div><span>Nachmittags</span><strong>Sommerlich schick</strong></div><div class="evening-only"><span>Abends</span><strong>Festlich</strong></div></div>
+    </section>
+
+    <section id="uebernachtung" class="section photo-split evening-only">
+      <img src="assets/strand.jpg" alt="Swantje und Sören am Strand">
+      <div class="photo-copy"><p class="kicker">Bleibt doch über Nacht</p><h2>Übernachtung</h2><p>Für unsere Gäste haben wir im Hotel Schönau ein Zimmerkontingent reserviert. Das Hotel ist zugleich unsere Abendlocation.</p><a class="primary-button" target="_blank" rel="noopener" href="https://book-qres.qr-hotels.com/?adult=1&arrive=2027-07-24&chain=19763&child=0&currency=EUR&depart=2027-07-25&group=Hochzeit%20Glimmann&hotel=45893&level=hotel&locale=de-DE&productcurrency=EUR&rooms=1">Zimmerkontingent buchen</a><a class="secondary-link" target="_blank" rel="noopener" href="https://www.hotel-schoenau.de">Zum Hotel Schönau</a></div>
+    </section>
+
+    <section id="trauzeugen" class="section botanical">
+      <div class="section-head"><p class="kicker">Für euch da</p><h2>Unsere Trauzeugen</h2><p>Bei Fragen rund um die Hochzeit, Überraschungen oder organisatorischen Themen könnt ihr euch gerne an unsere Trauzeugen wenden.</p></div>
+      <div class="witnesses">
+        <article><div class="initial">A</div><h3>Annika Kohrs</h3><a href="tel:+4917641723178">+49 176 41723178</a></article>
+        <article><div class="initial">S</div><h3>Simon Zimmermann</h3><a href="tel:+4915256100303">+49 1525 6100303</a></article>
+      </div>
+    </section>
+
+    <section id="geschenke" class="section gift-section">
+      <img src="assets/kanu.jpg" alt="Swantje und Sören bei einer Kanutour">
+      <div><p class="kicker">Was wir uns wünschen</p><h2>Geschenke</h2><p class="lead">Euer Kommen ist für uns das schönste Geschenk. Falls ihr uns darüber hinaus eine Freude machen möchtet, freuen wir uns mit einem kleinen Augenzwinkern besonders über einen Beitrag zu unseren zukünftigen gemeinsamen Abenteuern.</p></div>
+    </section>
+
+    <section id="rsvp" class="section sage rsvp-section">
+      <div class="section-head"><p class="kicker">Gebt uns Bescheid</p><h2>Zu- oder Absage</h2><p>Bitte gebt uns eure Rückmeldung bis zum <strong>31. Mai 2027</strong>.</p></div>
+      <form id="rsvpForm" class="rsvp-form" action="https://formsubmit.co/soeren.glimmann@gmx.de" method="POST">
+        <input type="hidden" name="_subject" value="Neue Hochzeits-Rückmeldung">
+        <input type="hidden" name="_next" value="https://soeren-swantje.github.io/Hochzeit-2027/danke.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="Einladungsgruppe" id="groupField" value="Nicht angegeben">
+        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off">
+        <div class="form-grid">
+          <label class="full">Vor- und Nachname<input name="Name" autocomplete="name" required></label>
+          <fieldset class="full"><legend>Unsere Rückmeldung</legend><label class="choice"><input type="radio" name="Rückmeldung" value="Zusage" required> Wir sind gerne dabei</label><label class="choice"><input type="radio" name="Rückmeldung" value="Absage"> Leider können wir nicht dabei sein</label></fieldset>
+          <label>Anzahl der Personen<input type="number" name="Personenzahl" min="1" max="10" value="1" required></label>
+          <label>E-Mail für Rückfragen<input type="email" name="E-Mail" autocomplete="email"></label>
+          <label class="full">Namen weiterer eingeladener Personen<textarea name="Weitere Personen" rows="2" placeholder="Falls ihr gemeinsam antwortet"></textarea></label>
+          <label class="full">Essenswünsche, Allergien oder Hinweise<textarea name="Hinweise" rows="3"></textarea></label>
+          <label class="consent full"><input type="checkbox" required> Ich bin damit einverstanden, dass meine Angaben zur Organisation der Hochzeit verarbeitet und per E-Mail übermittelt werden.</label>
+        </div>
+        <button class="primary-button" type="submit">Rückmeldung senden</button>
+        <p class="form-note">Die Angaben werden über den externen Formulardienst FormSubmit an soeren.glimmann@gmx.de übermittelt.</p>
+      </form>
+    </section>
+  </main>
+  <footer><div class="footer-mark">Swantje <i>&</i> Sören</div><p>24. Juli 2027</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
