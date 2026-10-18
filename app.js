@@ -1,9 +1,0 @@
-document.addEventListener('DOMContentLoaded',function(){
-const p=new URLSearchParams(location.search);let g=p.get('gruppe');
-if(!['tag','abend'].includes(g))g=sessionStorage.getItem('hochzeitGruppe')||'abend';
-sessionStorage.setItem('hochzeitGruppe',g);
-const gf=document.querySelector('#groupField');if(gf)gf.value=g==='abend'?'Nachmittag und Abend':'Nur Nachmittag';
-if(g==='tag')document.querySelectorAll('.evening-only').forEach(e=>e.classList.add('hidden-by-group'));else document.querySelectorAll('.day-only').forEach(e=>e.classList.add('hidden-by-group'));
-const b=document.querySelector('.menu-button'),n=document.querySelector('#nav');if(b&&n){b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false')}));}
-const de=document.querySelector('#days'),he=document.querySelector('#hours'),me=document.querySelector('#minutes');function tick(){const d=Math.max(0,new Date('2027-07-24T14:00:00+02:00')-Date.now());if(de)de.textContent=Math.floor(d/86400000);if(he)he.textContent=Math.floor(d/3600000)%24;if(me)me.textContent=Math.floor(d/60000)%60}tick();setInterval(tick,60000);
-});
