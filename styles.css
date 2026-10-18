@@ -30,3 +30,15 @@ h1,h2,h3{color:var(--olive);font-weight:500}h2{font-size:clamp(2.8rem,5.5vw,5rem
 .rsvp-intro{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.2rem}.rsvp-deadline{font-family:Inter,Arial,sans-serif;letter-spacing:.04em}.rsvp-form input,.rsvp-form textarea{background:#fffdf8;border-color:#cbc8b8}
 footer{background:#434b39}.footer-mark{font-size:3rem}
 @media(max-width:780px){.oak-header{width:75px;height:60px;left:8px}.botanical:before,.botanical:after{width:210px;height:210px}.section{padding-top:76px;padding-bottom:76px}}
+
+/* RSVP + Timeline Feinschliff */
+.rsvp-deadline{font-size:1.16rem!important;line-height:1.55!important}
+.rsvp-deadline strong{color:#a64b45!important;font-size:1.08em!important;font-weight:600!important}
+.timeline:before{left:162px!important}
+.timeline article{grid-template-columns:130px 28px 1fr!important;gap:18px!important}
+.timeline .marker{justify-self:center!important;margin:7px 0 0!important}
+@media(max-width:780px){
+  .timeline:before{left:110px!important}
+  .timeline article{grid-template-columns:90px 20px 1fr!important;gap:10px!important}
+  .timeline .marker{justify-self:center!important;margin:7px 0 0!important}
+}
